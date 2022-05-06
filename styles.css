@@ -152,4 +152,14 @@
         font-size: 3vw;
        
     }
+
+    main{
+        height: 20vh;
+    }
+}
+
+
+main{
+    background-color: #FFA185;
+    height: 100vh;
 }
