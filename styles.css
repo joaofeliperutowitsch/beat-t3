@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container_header{
+    max-width: 1920px;
+    width: 100%;
+    height: 72vh;
+    margin: auto;
+    background-color:#129799;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #f7f7f7;
+}
+
+.container_header div{
+    display: flex;
+    align-items: center;
+}
+
+.container_header--title{
+    font-size:5vw;
+}
+
+.logo{
+    width: 33.3vw;
+}
+
+
+.container_menu{
+    width: 60%;
+    padding: 2vh;
+  
+}
+
+.container_menubt{
+    width: 70%;
+    padding: 2vh;
+    
+}
+
+.container_header ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.container_menu--list{
+    width: 10vw;
+    font-size: 2em;
+}
+
+.container_menubt--list{
+    width: 30vw;
+    font-size: 2em;
+}
+
+.container_header li:hover{
+    cursor:pointer;
+    font-weight: 600;
+}
+
+@media(min-width:1940px){
+    .container_header div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container_header--title{
+        font-size: 4vw;
+        margin-top: 2vh;
+    }
+
+    .container_header li{
+        font-size: 3em;
+    }
+}
+
+
+@media (max-width:600px){
+    .container_header{
+        height: 50vh;
+    }
+    
+    .container_header div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-top: solid 1px;
+        border-bottom:solid 1px;
+    }
+    .container_header--title{
+        font-size: 6.5vw;
+        margin-top: 2vh;
+    }
+
+    .logo{
+        width: 60vw;
+    }
+
+    .container_menu--list{
+        width: 40vw;
+        font-size: 4vw;
+        
+    }
+
+    .container_menubt--list{
+        width: 50vw;
+        font-size: 4vw;
+       
+    }
+
+}
+
+@media(max-height:400px){
+    .container_header{
+        height: 100%;
+    }
+    .container_header div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-top: solid 1px;
+        border-bottom:solid 1px;
+        padding: 2vh;
+    }
+
+    .container_menu--list{
+        width: 30vw;
+        font-size: 3vw;
+        
+    }
+
+    .logo{
+        width: 45vw;
+    }
+
+    .container_menubt--list{
+        width: 40vw;
+        font-size: 3vw;
+       
+    }
+}
